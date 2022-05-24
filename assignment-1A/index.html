@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Responsiive Admin Dashboard | SchoolStock </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">School</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Admin</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">Teacher</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">Student</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="links_name">peon</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">total expend</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Favrorites</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <!-- <img src="images/profile.jpg" alt=""> -->
+                <span class="admin_name">Muneer</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Staff</div>
+                        <div class="number">35</div>
+                        <div class="indicator">
+
+                            <span class="text">
+                                <div class="."></div>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total peon</div>
+                        <div class="number">10</div>
+                        <div class="indicator">
+
+                            <span class="text">
+                                <div class="."></div>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Student</div>
+                        <div class="number">1200</div>
+                        <div class="indicator">
+
+                            <span class="text">
+                                <div class="."></div>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total security</div>
+                        <div class="number">10</div>
+                        <div class="indicator">
+
+                            <span class="text">
+                                <div class="."></div>
+                            </span>
+                        </div>
+                    </div>
+                    <!---<i class='bx bxs-cart-download cart four'></i> -->
+                </div>
+            </div>
+
+
+
+            <!DOCTYPE HTML>
+            <html>
+
+            <head>
+                <script type="text/javascript">
+                    window.onload = function () {
+                        var chart = new CanvasJS.Chart("chartContainer", {
+                            title: {
+                                text: "School details 2022"
+                            },
+                            legend: {
+                                maxWidth: 1000,
+                                itemWidth: 820
+                            },
+                            data: [{
+                                type: "pie",
+                                showInLegend: true,
+                                legendText: "{indexLabel}",
+                                dataPoints: [{
+                                    y: 800,
+                                    indexLabel: "Total Teacher"
+                                }, {
+                                    y: 80,
+                                    indexLabel: "Total peon"
+                                }, {
+                                    y: 1200,
+                                    indexLabel: "Total Students"
+                                }, {
+                                    y: 1200,
+                                    indexLabel: "Total Security"
+                                }]
+                            }]
+                        });
+                        chart.render();
+                    }
+                </script>
+                <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </head>
+
+            <body>
+                <!---  <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+                --->
+                <div id="chartContainer" style="width:50%;height:240px;float:left;">
+                    <canvas id="chartContainer"></canvas>
+                </div>
+                <div style="width:50%;height:240px;float:left;">
+                    <canvas id="chartContainer"></canvas>
+                </div>
+
+
+            </html>
+            <script>
+                let sidebar = document.querySelector(".sidebar");
+                let sidebarBtn = document.querySelector(".sidebarBtn");
+                sidebarBtn.onclick = function () {
+                    sidebar.classList.toggle("active");
+                    if (sidebar.classList.contains("active")) {
+                        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                    } else
+                        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+                }
+            </script>
+        </div>
+        </div>
+        <i class='bx bxs-cart-download cart four'></i>
+        </div>
+        </div>
+
+
+        <!DOCTYPE HTML>
+        <html>
+
+        <head>
+            <script type="text/javascript">
+                window.onload = function () {
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                        title: {
+                            text: "Total Expense"
+                        },
+                        data: [
+
+                            {
+                                dataPoints: [{
+                                    x: 1,
+                                    y: 297571,
+                                    label: "2015"
+                                }, {
+                                    x: 2,
+                                    y: 267017,
+                                    label: "2016"
+                                }, {
+                                    x: 3,
+                                    y: 175200,
+                                    label: "2017"
+                                }, {
+                                    x: 4,
+                                    y: 154580,
+                                    label: "2018"
+                                }, {
+                                    x: 5,
+                                    y: 116000,
+                                    label: "2019"
+                                }, {
+                                    x: 6,
+                                    y: 97800,
+                                    label: "2020"
+                                }]
+                            }
+                        ]
+                    });
+
+                    chart.render();
+                }
+
+            </script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            <div>
+                <div id="piechart"></div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    // Draw the chart and set the chart values
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Mathematics', 7],
+                            ['Science', 7],
+                            ['Language', 4],
+                            ['Sports', 4],
+                            ['Support Staff', 2]
+                        ]);
+
+                        // Optional; add a title and set the width and height of the chart
+                        var options = { 'title': 'Teacher Work Per Day', 'width': 550, 'height': 400 };
+
+                        // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                        chart.draw(data, options);
+                    }
+                </script>
+            </div>
+        </head>
+
+        <body>
+            <div id="chartContainer" style="width:50%;">
+                <canvas id="layanan"></canvas>
+            </div>
+            <div style="width:50%;">
+                <canvas id="chartContainer"></canvas>
+            </div>
+        </body>
+
+        </html>
+
+
+</body>
+
+</html>
