@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="details" font="c">
+        <div data-role="header">
+            <h1> Details </h1>
+        </div>
+        <div data-role="content">
+            <form name="form1" action="index.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname">
+                <label for="address">Shipping Address</label>
+                <textarea name="" id="address" cols="10" rows="10" placeholder="Address"></textarea>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="state">State</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UK">Uttrakhand</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="MP">Madhya Pradesh</option>
+                </select>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+                <label for="pin">Pin</label>
+                <input type="number" name="pin" id="pin">
+
+                <button>Submit</button>
+            </form>
+            <a href="index.html" > Go to Home</a>
+        </div>
+        <div data-role="footer">
+            <h3>@copyright @FCart</h3>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
